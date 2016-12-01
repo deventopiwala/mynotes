@@ -6,3 +6,6 @@ ls -lah
 	a -> all
 	h -> human readable
 
+ls -laht
+	t -> sort my modification time, newest first
+
