@@ -1,0 +1,8 @@
+
+Frequently accessed commands
+
+ls -lah
+	l -> use a long listing format
+	a -> all
+	h -> human readable
+
