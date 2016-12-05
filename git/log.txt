@@ -37,3 +37,43 @@ git log --pretty=format:"%h - %an, %ar: %s"
 %s Subject
 
 
+
+# Output limiting options
+
+git log --since=2.weeks
+git log --since=2.years
+
+# Search in log output
+git log --grep <message>
+
+# Filter by author
+git log --authoer <author>
+
+Note that if you want to specify both author and grep options, you have to add --all-match or
+the command will match commits with either.
+
+
+
+# Display commits that introduced a change to the code that added or removed the string.
+git log -S <string>
+
+
+
+-(n) Show only the last n commits
+--since , --after Limit the commits to those made after the speci-
+fied date.
+--until , --before Limit the commits to those made before the speci-
+fied date.
+--author Only show commits in which the author entry
+matches the specified string.
+--committer Only show commits in which the committer entry
+matches the specified string.
+--grep Only show commits with a commit message con-
+taining the string
+-S Only show commits adding or removing code
+matching the string
+
+
+
+
+
